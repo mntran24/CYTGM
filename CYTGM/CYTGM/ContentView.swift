@@ -9,14 +9,24 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            if UIDevice.current.orientation.isPortrait{
-                let _ = changeOrientation()
-            }
-            Image(systemName: "globe")
-                .imageScale(.large)
+        HStack {
+            Image(systemName: "house")
+                .resizable()
+                .frame(width:45, height:45)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Home")
+                .bold()
+                .font(.title)
+                .padding()
+            Text("Watch")
+                .bold()
+                .font(.title)
+                .padding()
+        }
+        Form{
+            Section(header:Text("Recently Watched")){
+                
+            }
         }
         .padding()
     }
