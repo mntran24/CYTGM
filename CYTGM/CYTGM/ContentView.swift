@@ -22,6 +22,7 @@ struct ContentView: View {
                 .bold()
                 .font(.title)
                 .padding()
+        
         }
         Form{
             Section(header:Text("Recently Watched")){
