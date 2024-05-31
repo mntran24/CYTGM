@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 struct VideoView: View {
     var body: some View {
-        Text("hi")
+        Text("hey")
         let jsonData = """
     {
         "resolution": "full-hd",
